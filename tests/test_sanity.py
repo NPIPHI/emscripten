@@ -433,7 +433,6 @@ fi
       }
     ''')
 
-    wipe()
     with env_modify({'EM_CONFIG': get_basic_config()}):
       run_process([EMCC, 'main.cpp', '-o', 'a.out.js'])
 
